@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="NavigationSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" barStyle="black" translatesAutoresizingMaskIntoConstraints="NO" id="0yz-yu-fYk">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                <items>
+                                    <navigationItem title="Interval Alarm" id="mwb-Ob-F8T"/>
+                                </items>
+                            </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Time Left" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G7i-gF-FGt">
+                                <rect key="frame" x="149" y="155" width="288" height="44"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="52"/>
+                                <color key="textColor" red="1" green="0.081942766769999995" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Enter valid time!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bAF-lK-7yT">
+                                <rect key="frame" x="156" y="316" width="288" height="44"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
+                                <color key="textColor" red="1" green="0.081942766769999995" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Interval " textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PXN-ic-RFB">
+                                <rect key="frame" x="178" y="106" width="259" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U5J-uw-9zD">
+                                <rect key="frame" x="120" y="201" width="346" height="55"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="38"/>
+                                <state key="normal" title="Start ">
+                                    <color key="titleColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnStart:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LCZ-df-IJE"/>
+                                </connections>
+                            </button>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" barStyle="black" translatesAutoresizingMaskIntoConstraints="NO" id="AQm-zI-Qp7">
+                                <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                                <items>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="Imf-PH-YwW"/>
+                                    <barButtonItem systemItem="cancel" id="9w7-gV-IcU">
+                                        <connections>
+                                            <action selector="btnCancelledClick:" destination="BYZ-38-t0r" id="VM3-st-Iza"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="fTM-GI-4Rv"/>
+                                </items>
+                            </toolbar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ljn-tu-ZZ3">
+                                <rect key="frame" x="200" y="264" width="214" height="44"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="52"/>
+                                <color key="textColor" red="1" green="0.081942766769999995" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.24132235738255034" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="G7i-gF-FGt" firstAttribute="centerX" secondItem="PXN-ic-RFB" secondAttribute="centerX" id="4Xf-xG-IDB"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="AQm-zI-Qp7" secondAttribute="bottom" id="FBm-iO-QHv"/>
+                            <constraint firstItem="Ljn-tu-ZZ3" firstAttribute="centerX" secondItem="U5J-uw-9zD" secondAttribute="centerX" id="Lhf-eg-uRj"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="0yz-yu-fYk" secondAttribute="trailing" constant="-20" id="PXx-2i-ofp"/>
+                            <constraint firstItem="0yz-yu-fYk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="VFR-nL-gxc"/>
+                            <constraint firstItem="PXN-ic-RFB" firstAttribute="top" secondItem="0yz-yu-fYk" secondAttribute="bottom" constant="53" id="fCU-rS-slw"/>
+                            <constraint firstItem="U5J-uw-9zD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fmf-l8-ERQ"/>
+                            <constraint firstItem="U5J-uw-9zD" firstAttribute="top" secondItem="G7i-gF-FGt" secondAttribute="bottom" constant="8" id="gTS-vb-VIf"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="AQm-zI-Qp7" secondAttribute="trailing" constant="-20" id="goa-SF-1Lh"/>
+                            <constraint firstItem="Ljn-tu-ZZ3" firstAttribute="top" secondItem="U5J-uw-9zD" secondAttribute="bottom" constant="2" id="hrJ-2w-egh"/>
+                            <constraint firstItem="0yz-yu-fYk" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="kga-Bl-1yK"/>
+                            <constraint firstItem="PXN-ic-RFB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="m7w-wf-xhq"/>
+                            <constraint firstItem="G7i-gF-FGt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rBE-D4-xwG"/>
+                            <constraint firstItem="AQm-zI-Qp7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="rjb-GE-0JG"/>
+                            <constraint firstItem="Ljn-tu-ZZ3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zjT-K4-7Ek"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bar" destination="AQm-zI-Qp7" id="HzG-Px-J3Q"/>
+                        <outlet property="btn_Start" destination="U5J-uw-9zD" id="guG-li-MVd"/>
+                        <outlet property="label" destination="Ljn-tu-ZZ3" id="hj3-bA-tt4"/>
+                        <outlet property="lblError" destination="bAF-lK-7yT" id="NDD-2Z-dj0"/>
+                        <outlet property="lbl_TimeLeft" destination="G7i-gF-FGt" id="egf-ae-q6n"/>
+                        <outlet property="txtTimer" destination="PXN-ic-RFB" id="T2u-Ax-4FU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="305" y="418"/>
+        </scene>
+    </scenes>
+</document>
